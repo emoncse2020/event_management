@@ -1,0 +1,15 @@
+{% extends "events/_base.html" %}
+
+{% block content %}
+
+<div>
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{form.as_p}}
+        <button type="submit" class="bg-green-400 py-2 px-3 text-center w-full mt-3 rounded">Save Form</button>
+    </form>
+</div>
+
+{% endblock content %}
+
+
